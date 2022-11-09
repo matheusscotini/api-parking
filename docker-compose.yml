@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  api:
+    build: .
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/usr/api
+      - /usr/api/node_modules/bcrypt/
